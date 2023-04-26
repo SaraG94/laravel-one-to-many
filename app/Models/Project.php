@@ -16,4 +16,10 @@ class Project extends Model
         'link',
         'slug'
     ];
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+        //questo progetto appartiene a Type
+    }
 }
