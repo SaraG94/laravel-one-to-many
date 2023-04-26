@@ -11,6 +11,7 @@
         <div class="d-flex align-items-center">
             <div class="me-auto">
                 <h1>{{ $project->titolo }}</h1>
+                <h4>Type: {{ $project->type ? $project->type->nome : '/' }}</h4>
             </div>
 
             <div>
