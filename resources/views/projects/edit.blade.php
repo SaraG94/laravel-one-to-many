@@ -6,7 +6,7 @@
     </div>
 
     <div class="container">
-        <form action="{{ route('projects.store') }}" method="POST">
+        <form action="{{ route('projects.update') }}" method="POST">
         @csrf
             <div class="form-group">
                 <label for="titolo">Titolo</label>
