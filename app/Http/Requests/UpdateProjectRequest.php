@@ -32,6 +32,7 @@ class UpdateProjectRequest extends FormRequest
             'cliente' => 'required|max:100|min:2',
             'descrizione'=>'nullable|string',
             'link'=>'required|url',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
 }

@@ -78,7 +78,8 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('projects.edit', compact('project'));
+        $types = Type::orderBy('nome', 'asc')->get();
+        return view('projects.edit', compact('project','types'));
     }
 
     /**
